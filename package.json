@@ -1,0 +1,35 @@
+{
+    "name": "typeorm-demo",
+    "version": "0.1.0",
+    "description": "",
+    "main": "dist/index.js",
+    "scripts": {
+        "cleardir": "rimraf dist/*",
+        "compile": "tsc",
+        "build": "yarn run cleardir && yarn run compile",
+        "start": "yarn run build && node ."
+    },
+    "author": "Carter Himmel <me@fyko.net>",
+    "license": "Apacahe-2.0",
+    "dependencies": {
+        "discord.js": "^12.2.0",
+        "pg": "^8.3.0",
+        "reflect-metadata": "^0.1.13",
+        "tslib": "^2.0.0",
+        "typeorm": "^0.2.25"
+    },
+    "devDependencies": {
+        "@types/node": "^14.0.14",
+        "@types/pg": "^7.14.4",
+        "@types/ws": "^7.2.5",
+        "dotenv": "^8.2.0",
+        "rimraf": "^3.0.2",
+        "typescript": "^3.9.5"
+    },
+    "optionalDependencies": {
+        "bufferutil": "^4.0.1",
+        "erlpack": "github:discord/erlpack",
+        "utf-8-validate": "^5.0.2",
+        "zlib-sync": "^0.1.6"
+    }
+}
